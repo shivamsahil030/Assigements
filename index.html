@@ -82,15 +82,22 @@
         <section id="BookNow">
             <h2>Book Now</h2>
             <form action="">
-                <label for="name">Name: </label>
-                <input id="name" type="text">
+ <label for="name">Name: </label>
+        <input id="name" type="text" name="name" required minlength="3" placeholder="Enter your name">
 
-                <label for="name">Email: </label>
-                <input id="name" type="email">
+        <br><br>
 
-                <label for="name">Phone: </label>
-                <input id="name" type="tel">
-<button>submit</button>
+        <label for="email">Email: </label>
+        <input id="email" type="email" name="email" required placeholder="Enter your email">
+
+        <br><br>
+
+        <label for="phone">Phone: </label>
+        <input id="phone" type="tel" name="phone" required pattern="[0-9]{10}" placeholder="Enter 10 digit phone number">
+
+        <br><br>
+
+        <button type="submit">Submit</button>
             </form>
         </section>
 
@@ -109,3 +116,4 @@
 
 
 </html>
+
